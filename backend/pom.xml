@@ -13,7 +13,7 @@
 	<artifactId>dscatalog</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>dscatalog</name>
-	<description>DSCatalog Bootcamp DevSuperior</description>
+		<description>DSCatalog Bootcamp DevSuperior</description>
 	<properties>
 		<java.version>11</java.version>
 		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
@@ -58,7 +58,17 @@
 			</exclusions>
 		</dependency>
 
-	
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security.oauth.boot</groupId>
+			<artifactId>spring-security-oauth2-autoconfigure</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
