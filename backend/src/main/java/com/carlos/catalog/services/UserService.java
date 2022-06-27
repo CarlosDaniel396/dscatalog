@@ -26,8 +26,8 @@ import com.carlos.catalog.entities.Role;
 import com.carlos.catalog.entities.User;
 import com.carlos.catalog.repositories.RoleRepository;
 import com.carlos.catalog.repositories.UserRepository;
-import com.devsuperior.dscatalog.services.exceptions.DatabaseException;
-import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
+import com.carlos.catalog.services.exceptions.DatabaseException;
+import com.carlos.catalog.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class UserService implements UserDetailsService {

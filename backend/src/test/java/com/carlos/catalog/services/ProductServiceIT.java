@@ -12,7 +12,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.carlos.catalog.dto.ProductDTO;
 import com.carlos.catalog.repositories.ProductRepository;
-import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
+import com.carlos.catalog.services.exceptions.ResourceNotFoundException;
 
 @SpringBootTest
 @Transactional

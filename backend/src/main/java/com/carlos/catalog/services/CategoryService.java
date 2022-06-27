@@ -15,8 +15,8 @@ import org.springframework.transaction.annotation.Transactional;
 import com.carlos.catalog.dto.CategoryDTO;
 import com.carlos.catalog.entities.Category;
 import com.carlos.catalog.repositories.CategoryRepository;
-import com.devsuperior.dscatalog.services.exceptions.DatabaseException;
-import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
+import com.carlos.catalog.services.exceptions.DatabaseException;
+import com.carlos.catalog.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class CategoryService {

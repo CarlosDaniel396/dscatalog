@@ -1,4 +1,4 @@
-package com.devsuperior.dscatalog.resources.exceptions;
+package com.carlos.catalog.resources.exceptions;
 
 import java.time.Instant;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import com.devsuperior.dscatalog.services.exceptions.DatabaseException;
-import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
+import com.carlos.catalog.services.exceptions.DatabaseException;
+import com.carlos.catalog.services.exceptions.ResourceNotFoundException;
 
 @ControllerAdvice
 public class ResourceExceptionHandler {

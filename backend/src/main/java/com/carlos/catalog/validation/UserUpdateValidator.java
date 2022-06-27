@@ -14,7 +14,7 @@ import org.springframework.web.servlet.HandlerMapping;
 import com.carlos.catalog.dto.UserUpdateDTO;
 import com.carlos.catalog.entities.User;
 import com.carlos.catalog.repositories.UserRepository;
-import com.devsuperior.dscatalog.resources.exceptions.FieldMessage;
+import com.carlos.catalog.resources.exceptions.FieldMessage;
 
 public class UserUpdateValidator implements ConstraintValidator<UserUpdateValid, UserUpdateDTO> {
 

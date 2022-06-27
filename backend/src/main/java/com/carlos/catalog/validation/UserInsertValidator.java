@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.carlos.catalog.dto.UserInsertDTO;
 import com.carlos.catalog.entities.User;
 import com.carlos.catalog.repositories.UserRepository;
-import com.devsuperior.dscatalog.resources.exceptions.FieldMessage;
+import com.carlos.catalog.resources.exceptions.FieldMessage;
 
 public class UserInsertValidator implements ConstraintValidator<UserInsertValid, UserInsertDTO> {
 

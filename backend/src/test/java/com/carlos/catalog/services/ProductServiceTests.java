@@ -27,9 +27,9 @@ import com.carlos.catalog.entities.Category;
 import com.carlos.catalog.entities.Product;
 import com.carlos.catalog.repositories.CategoryRepository;
 import com.carlos.catalog.repositories.ProductRepository;
+import com.carlos.catalog.services.exceptions.DatabaseException;
+import com.carlos.catalog.services.exceptions.ResourceNotFoundException;
 import com.carlos.catalog.tests.Factory;
-import com.devsuperior.dscatalog.services.exceptions.DatabaseException;
-import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
 
 @ExtendWith(SpringExtension.class)
 public class ProductServiceTests {
