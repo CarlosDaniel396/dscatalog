@@ -2,6 +2,7 @@ package com.carlos.catalog.services;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -14,6 +15,7 @@ import com.carlos.catalog.entities.Category;
 import com.carlos.catalog.entities.Product;
 import com.carlos.catalog.repositories.CategoryRepository;
 import com.carlos.catalog.repositories.ProductRepository;
+import com.devsuperior.dscatalog.services.exceptions.ResourceNotFoundException;
 
 @Service
 public class ProductService {
@@ -30,5 +32,12 @@ public class ProductService {
 		Page<Product> page = repository.find(categories, name, pageable);
 		repository.findProductsWithCategories(page.getContent());
 		return page.map(x -> new ProductDTO(x, x.getCategories()));
+	}
+	
+	@Transactional(readOnly = true)
+	public ProductDTO findById(Long id) {
+		Optional<Product> obj = repository.findById(id);
+		Product entity = obj.orElseThrow(() -> new ResourceNotFoundException("Entity not found"));
+		return new ProductDTO(entity, entity.getCategories());
 	}
 }
