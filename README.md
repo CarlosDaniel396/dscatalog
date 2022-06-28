@@ -26,6 +26,9 @@ Pré-requisitos: Java 11
 # Clonar repositório
 git clone https://github.com/CarlosDaniel396/dscatalog-devsuperior.git
 
+# Entrar na pasta backend
+cd backend
+
 # executar o projeto
 ./mvnw spring-boot:run
 
